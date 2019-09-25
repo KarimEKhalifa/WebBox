@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
-    $("textarea").click(() => $(this).disabled = !$(this).disabled);
+    $("#output").contents().find('head').append('<style></style>');
+
+    $("textarea").click(() => $(this).disabled = !$(this).disabled)
 
     $("#htmlTab").bind('input', function(){
         $("#output").contents().find('body').html($("#htmlTab").val())
