@@ -1,0 +1,20 @@
+#header{
+    height: 50px;
+    background: whitesmoke;
+    padding: 0px;
+    margin: 0px;
+}
+
+#codeSection{
+    height: 90vh;
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: space-evenly;
+}
+
+#output{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script defer src="./codePlayer.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="./codePlayer.css" rel="stylesheet"/>
+    <title>Code player</title>
+</head>
+<body>
+    <div id="header">
+            <p><h3><strong>Code Player</strong></h3></p>
+       <center> 
+           <div style="margin-top: -15px;">
+                <button id="htmlBtn">HTML</button>
+                <button id="cssBtn">CSS</button>
+                <button id="jsBtn">JavaScript</button>
+           </div>
+        </center>
+    </div>
+    <div id="codeSection">
+        <textarea id="htmlTab">Hey!</textarea>
+        <textarea id="cssTab"></textarea>
+        <textarea id="jsTab"></textarea>
+        <iframe id="output"></iframe>
+    </div>
+    
+</body>
+</html>
