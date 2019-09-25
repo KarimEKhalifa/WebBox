@@ -36,5 +36,12 @@ $(document).ready(function(){
         $("#output").contents().find('#container').html($("#htmlTab").val())
       });
     
+      $("#cssTab").bind('input', function(){
+        $("#output").contents().find('style').html($("#cssTab").val())
+      });
+    
+      $("#jsTab").bind('input', function(){
+        $("#output").contents().find('body').js($("#jsTab").val())
+      });
 
 });
