@@ -33,15 +33,8 @@ $(document).ready(function(){
     });
 
     $("#htmlTab").bind('input', function(){
-        $("#output").contents().find('body').html($("#htmlTab").val())
+        $("#output").contents().find('#container').html($("#htmlTab").val())
       });
     
-      $("#cssTab").bind('input', function(){
-        $("#output").contents().find('body').css($("#htmlTab").val())
-      });
-    
-      $("#jsTab").bind('input', function(){
-        $("#output").contents().find('body').js($("#htmlTab").val())
-      });
 
 });
