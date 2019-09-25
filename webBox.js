@@ -1,8 +1,11 @@
 $(document).ready(function(){
 
-    $("#output").contents().find('head').append('<style></style>');
+    $("button").click(function(){
+        let id = this.id;
+        $("textarea")[id].hidden = ! $("textarea")[id].hidden;
+    })
 
-    $("textarea").click(() => $(this).disabled = !$(this).disabled)
+    $("#output").contents().find('head').append('<style></style>');
 
     $("#htmlTab").bind('input', function(){
         $("#output").contents().find('body').html($("#htmlTab").val())
