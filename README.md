@@ -1,2 +1,2 @@
 # WebBox
-online simple web dev tool
+A simple jsBin mimic
