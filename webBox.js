@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
+
     $("button").click(function(){
         let id = this.id;
-        $("textarea")[id].hidden = ! $("textarea")[id].hidden;
+        $(".grid-item")[id].hidden = ! $(".grid-item")[id].hidden;
     })
 
     $("#output").contents().find('head').append('<style></style>');
